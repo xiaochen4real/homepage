@@ -3,54 +3,47 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Chen Xiao">
-  <main class="mx-auto flex min-h-screen max-w-3xl flex-col justify-center px-8">
-    <h1 class="text-7xl font-semibold tracking-tight">
-      Chen Xiao
-    </h1>
+<main class="mx-auto flex min-h-screen max-w-3xl flex-col justify-center px-8">
 
-    <p class="mt-6 text-2xl text-neutral-700">
-      ASIC Design Engineer
-    </p>
+  <img
+    src="/logo.svg"
+    alt="Chen Xiao Logo"
+    class="mb-10 h-24 w-24"
+  />
 
-    <p class="mt-10 max-w-2xl text-lg leading-8 text-neutral-600">
-      Passionate about digital design, computer architecture, and hardware
-      systems.
-    </p>
+  <h1 class="text-7xl font-semibold tracking-tight">
+    Chen Xiao
+  </h1>
 
-    <p class="mt-6 text-neutral-500">
-      Currently based in Gothenburg, Sweden.
-    </p>
+  <p class="mt-6 text-2xl text-neutral-700">
+    ASIC Design Engineer
+  </p>
 
-    <div class="mt-16 flex flex-col gap-3 text-lg">
-      <a
-        class="w-fit transition hover:text-black hover:underline"
-        href="/projects"
-      >
-        Projects
-      </a>
+  <p class="mt-10 max-w-2xl text-lg leading-8 text-neutral-600">
+    Passionate about digital design,
+    computer architecture,
+    and hardware systems.
+  </p>
 
-      <a
-        class="w-fit transition hover:text-black hover:underline"
-        href="/blog"
-      >
-        Blog
-      </a>
+  <p class="mt-6 text-neutral-500">
+    Currently based in Gothenburg, Sweden.
+  </p>
 
-      <a
-        class="w-fit transition hover:text-black hover:underline"
-        href="https://github.com/xiaochen4real"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GitHub
-      </a>
+  <div class="mt-16 flex flex-col gap-3 text-lg">
+    <a class="hover:underline" href="/projects">Projects</a>
+    <a class="hover:underline" href="/blog">Blog</a>
+    <a
+      class="hover:underline"
+      href="https://github.com/xiaochen4real"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      GitHub
+    </a>
+    <a class="hover:underline" href="mailto:me@chenxiao.me">
+      Email
+    </a>
+  </div>
 
-      <a
-        class="w-fit transition hover:text-black hover:underline"
-        href="mailto:me@chenxiao.me"
-      >
-        Email
-      </a>
-    </div>
-  </main>
+</main>
 </Layout>
