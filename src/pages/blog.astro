@@ -1,7 +1,39 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import SiteHeader from "../components/SiteHeader.astro";
 ---
 
 <Layout title="Blog">
-  <h1>Blog</h1>
+  <SiteHeader />
+
+  <main class="mx-auto max-w-4xl px-8 py-20">
+
+    <h1 class="text-5xl font-bold tracking-tight">
+      Blog
+    </h1>
+
+    <p class="mt-6 max-w-2xl text-lg leading-8 text-neutral-600">
+      Thoughts on digital design, computer architecture,
+      ASIC development, and the tools I use every day.
+    </p>
+
+    <section class="mt-20 rounded-2xl border border-neutral-200 p-10">
+
+      <h2 class="text-2xl font-semibold">
+        Writing in progress.
+      </h2>
+
+      <p class="mt-6 max-w-2xl leading-8 text-neutral-600">
+        I'm currently working on my first article.
+        Meanwhile, I'm documenting my learning journey
+        through YSYX and other personal projects.
+      </p>
+
+      <p class="mt-8 text-neutral-400">
+        Coming soon.
+      </p>
+
+    </section>
+
+  </main>
 </Layout>
