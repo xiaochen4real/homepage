@@ -3,40 +3,151 @@ import Layout from "../../layouts/Layout.astro";
 import SiteHeader from "../../components/SiteHeader.astro";
 ---
 
-<Layout title="YSYX">
-
+<Layout title="One Student One Chip (YSYX)">
   <SiteHeader />
 
-  <main class="mx-auto min-h-screen max-w-3xl px-8 py-24">
+  <main class="mx-auto max-w-3xl px-8 py-20">
 
-    <a
-      href="/projects"
-      class="text-neutral-500 transition hover:text-black"
-    >
-
-    </a>
-
-    <h1 class="mt-10 text-5xl font-bold tracking-tight">
+    <h1 class="text-5xl font-bold tracking-tight">
       One Student One Chip (YSYX)
     </h1>
 
-    <p class="mt-6 text-lg leading-8 text-neutral-600">
-      Learning computer architecture by building a RISC-V processor
-      from scratch.
+    <p class="mt-5 text-xl text-neutral-500 italic">
+      Back to the fundamentals.
     </p>
 
-    <div class="mt-16 rounded-2xl border border-neutral-200 p-8">
+    <p class="mt-10 text-lg leading-8 text-neutral-600">
+      Learning computer architecture by building a
+      RISC-V processor from scratch.
+    </p>
 
-      <h2 class="text-xl font-semibold">
-        Status
+    <section class="mt-20">
+
+      <h2 class="text-2xl font-semibold">
+        Overview
       </h2>
 
-      <p class="mt-4 text-neutral-600">
-        🚧 In Progress
+      <p class="mt-6 leading-8 text-neutral-600">
+        YSYX is an open-source learning project that teaches
+        computer systems by building a RISC-V processor from
+        scratch. Rather than focusing on isolated concepts,
+        it connects digital logic, RTL design, architecture,
+        operating systems, and software into one complete
+        learning experience.
       </p>
 
-    </div>
+    </section>
+
+    <section class="mt-20">
+
+      <h2 class="text-2xl font-semibold">
+        Why I'm Learning This
+      </h2>
+
+      <p class="mt-6 leading-8 text-neutral-600">
+        Although I work as an ASIC Design Engineer,
+        I realized that many concepts in computer architecture
+        are easy to use but difficult to truly understand.
+        YSYX gives me the opportunity to rebuild that
+        foundation from the ground up.
+      </p>
+
+    </section>
+
+    <section class="mt-20">
+
+      <h2 class="text-2xl font-semibold">
+        Goals
+      </h2>
+
+      <ul class="mt-6 list-disc space-y-3 pl-6 text-neutral-600">
+
+        <li>Understand computer architecture beyond RTL implementation.</li>
+
+        <li>Build a complete RISC-V processor from scratch.</li>
+
+        <li>Document everything I learn.</li>
+
+      </ul>
+
+    </section>
+
+    <section class="mt-20">
+
+      <h2 class="text-2xl font-semibold">
+        Learning Progress
+      </h2>
+
+      <div class="mt-8 space-y-4 text-lg">
+
+        <p>✅ Digital Logic</p>
+
+        <p>✅ Verilator</p>
+
+        <p>🟡 RISC-V ISA</p>
+
+        <p>⬜ Pipeline</p>
+
+        <p>⬜ Cache</p>
+
+        <p>⬜ MMU</p>
+
+        <p>⬜ Operating System</p>
+
+      </div>
+
+    </section>
+
+    <section class="mt-20">
+
+      <h2 class="text-2xl font-semibold">
+        Related Notes
+      </h2>
+
+      <p class="mt-6 text-neutral-500">
+        Coming soon.
+      </p>
+
+    </section>
+
+    <section class="mt-20 mb-20">
+
+      <h2 class="text-2xl font-semibold">
+        Resources
+      </h2>
+
+      <div class="mt-8 flex flex-col gap-4">
+
+        <a
+          href="https://ysyx.oscc.cc/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:underline"
+        >
+          YSYX Homepage ↗
+        </a>
+
+        <a
+          href="https://github.com/OpenXiangShan/NEMU"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:underline"
+        >
+          NEMU ↗
+        </a>
+
+        <a
+          href="https://riscv.org/technical/specifications/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:underline"
+        >
+          RISC-V Specifications ↗
+        </a>
+
+      </div>
+
+    </section>
 
   </main>
-
 </Layout>
