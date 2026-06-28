@@ -2,18 +2,18 @@
 import "../styles/global.css";
 
 interface Props {
-  title: string;
+  title?: string;
+  description?: string;
 }
 
-const { title } = Astro.props;
+const {
+  title,
+  description = "Personal website of Chen Xiao, an ASIC Design Engineer passionate about digital design, computer architecture, and hardware systems."
+} = Astro.props;
 
-const siteTitle =
-  title === "Home"
-    ? "Chen Xiao · ASIC Design Engineer"
-    : `${title} · Chen Xiao`;
-
-const siteDescription =
-  "Personal website of Chen Xiao, an ASIC Design Engineer passionate about digital design, computer architecture, and hardware systems.";
+const siteTitle = title
+  ? `${title} · Chen Xiao`
+  : "Chen Xiao · ASIC Design Engineer";
 ---
 
 <!DOCTYPE html>
@@ -30,7 +30,7 @@ const siteDescription =
 
     <meta
       name="description"
-      content={siteDescription}
+      content={description}
     />
 
     <meta
@@ -50,7 +50,7 @@ const siteDescription =
 
     <meta
       property="og:description"
-      content={siteDescription}
+      content={description}
     />
 
     <meta
@@ -80,25 +80,12 @@ const siteDescription =
 
     <meta
       name="twitter:description"
-      content={siteDescription}
+      content={description}
     />
 
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="/favicon.svg"
-    />
-
-    <link
-      rel="icon"
-      href="/favicon.ico"
-      sizes="any"
-    />
-
-    <link
-      rel="apple-touch-icon"
-      href="/apple-touch-icon.png"
-    />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   </head>
 
   <body>
