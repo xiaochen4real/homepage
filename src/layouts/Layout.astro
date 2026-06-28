@@ -6,20 +6,100 @@ interface Props {
 }
 
 const { title } = Astro.props;
+
+const siteTitle =
+  title === "Home"
+    ? "Chen Xiao · ASIC Design Engineer"
+    : `${title} · Chen Xiao`;
+
+const siteDescription =
+  "Personal website of Chen Xiao, an ASIC Design Engineer passionate about digital design, computer architecture, and hardware systems.";
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
 
-  <title>{title}</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
 
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-</head>
+    <title>{siteTitle}</title>
+
+    <meta
+      name="description"
+      content={siteDescription}
+    />
+
+    <meta
+      name="author"
+      content="Chen Xiao"
+    />
+
+    <meta
+      name="theme-color"
+      content="#fafaf9"
+    />
+
+    <meta
+      property="og:title"
+      content={siteTitle}
+    />
+
+    <meta
+      property="og:description"
+      content={siteDescription}
+    />
+
+    <meta
+      property="og:type"
+      content="website"
+    />
+
+    <meta
+      property="og:url"
+      content="https://chenxiao.me"
+    />
+
+    <meta
+      property="og:site_name"
+      content="Chen Xiao"
+    />
+
+    <meta
+      name="twitter:card"
+      content="summary_large_image"
+    />
+
+    <meta
+      name="twitter:title"
+      content={siteTitle}
+    />
+
+    <meta
+      name="twitter:description"
+      content={siteDescription}
+    />
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/favicon.svg"
+    />
+
+    <link
+      rel="icon"
+      href="/favicon.ico"
+      sizes="any"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      href="/apple-touch-icon.png"
+    />
+  </head>
 
   <body>
     <slot />
