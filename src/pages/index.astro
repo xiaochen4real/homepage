@@ -3,65 +3,66 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-<main class="mx-auto flex min-h-screen max-w-4xl flex-col justify-center px-10">
-
-  <div class="flex items-center gap-6">
-
+  <main
+    class="mx-auto flex min-h-screen max-w-3xl flex-col items-center justify-center px-8 text-center"
+  >
     <img
       src="/logo.svg"
       alt="Chen Xiao Logo"
-      class="h-20 w-20"
+      class="mb-8 h-14 w-14"
     />
 
-    <h1 class="text-7xl font-bold tracking-tight text-neutral-900">
+    <h1
+      class="text-7xl font-bold tracking-[-0.05em] text-neutral-900"
+    >
       Chen Xiao
     </h1>
 
-  </div>
+    <p
+      class="mt-8 text-2xl font-medium text-neutral-700"
+    >
+      ASIC Design Engineer
+    </p>
 
-  <p class="mt-8 text-2xl text-neutral-700">
-    ASIC Design Engineer
-  </p>
+    <p
+      class="mt-10 max-w-2xl text-xl leading-9 text-neutral-600"
+    >
+      Passionate about digital design, computer architecture,
+      and hardware systems.
+    </p>
 
-  <p class="mt-10 max-w-2xl text-xl leading-9 text-neutral-600">
-    Passionate about digital design,
-    computer architecture,
-    and hardware systems.
-  </p>
+    <nav
+      class="mt-16 flex flex-wrap justify-center gap-8 text-lg text-neutral-700"
+    >
+      <a
+        href="/projects"
+        class="transition-colors duration-200 hover:text-black"
+      >
+        Projects
+      </a>
 
-  <p class="mt-6 text-neutral-500">
-    Based in Gothenburg, Sweden.
-  </p>
+      <a
+        href="/blog"
+        class="transition-colors duration-200 hover:text-black"
+      >
+        Blog
+      </a>
 
-  <nav class="mt-16 flex flex-wrap gap-8 text-lg">
+      <a
+        href="https://github.com/xiaochen4real"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="transition-colors duration-200 hover:text-black"
+      >
+        GitHub
+      </a>
 
-    <a
-      class="text-neutral-700 transition-colors hover:text-black"
-      href="/projects">
-      Projects
-    </a>
-
-    <a
-      class="text-neutral-700 transition-colors hover:text-black"
-      href="/blog">
-      Blog
-    </a>
-
-    <a
-      class="text-neutral-700 transition-colors hover:text-black"
-      href="https://github.com/xiaochen4real"
-      target="_blank"
-      rel="noopener noreferrer">
-      GitHub
-    </a>
-
-    <a
-      class="text-neutral-700 transition-colors hover:text-black"
-      href="mailto:me@chenxiao.me">
-      Email
-    </a>
-
-  </nav>
-
-</main>
+      <a
+        href="mailto:me@chenxiao.me"
+        class="transition-colors duration-200 hover:text-black"
+      >
+        Email
+      </a>
+    </nav>
+  </main>
 </Layout>
